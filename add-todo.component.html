@@ -1,0 +1,4 @@
+<form class = "form" (ngSubmit)= "onSubmit()">
+    <input (keyup)="onKey($event)" type = "text" name = "item" [(ngModel)] = "item" placeholder = "add todo">
+    <button (click) = "add()" type = "submit" value = "submit" class = "btn">Button</button>
+</form>

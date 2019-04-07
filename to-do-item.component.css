@@ -1,0 +1,14 @@
+.is-complete{
+    text-decoration: line-through;
+}
+p{
+    color:blue;
+    background-color:green;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    background-color:red;
+}
+button:hover{
+    background-color: darkred;
+}
