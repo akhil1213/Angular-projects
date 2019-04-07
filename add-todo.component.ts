@@ -21,11 +21,13 @@ export class AddTodoComponent implements OnInit {
     }
   }
   onKey(event:any){
-    this.item = event.target.value
-    this.changeTodoTitle.emit(this.item);
+    console.log(event.key);
+    if(event.key != "Enter" && event.key!="Backspace"){
+      this.item = event.target.value
+      this.changeTodoTitle.emit(this.item);
+    }
   }
   add(){
-    console.log(this.item);
     const todo = {
       title: this.item,
       completed: false
@@ -34,3 +36,4 @@ export class AddTodoComponent implements OnInit {
   }
 
 }
+
